@@ -1,4 +1,4 @@
-package com.example.argriculture.admin.entity;
+package com.example.argriculture.determine.entity;
 
 
 import jakarta.persistence.*;

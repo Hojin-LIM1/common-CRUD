@@ -5,41 +5,40 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Entity
-@Table(name = "farm")
+@Table(name = "user")
 @NoArgsConstructor
 
-public class Farm {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private String territory;
-
-    @Column(nullable = false)
-    private String weather;
-
-    @Column(nullable = false)
-    private String soil;
-
-    @Column(nullable = false)
-    private String crop;
-
-    @Column(nullable = false)
     private String name;
 
     @Column(nullable = false)
-    private String password;
+    private String location;
 
-    @Column
-    @Email
-    private String email;
+    @Column(nullable = false)
+    private String phoneNumber;
 
-    private String address;
-    private String bug;
+    @Column(nullable = false)
+    private String primaryCrop;
 
+    @Column(nullable = false)
+    private String toil;
+
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false, length = 20)
+    private String status;
+
+    @Column(nullable = false, updatable = false)
+    private LocalDateTime createdAt;
 
 
 }
