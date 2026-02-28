@@ -1,0 +1,37 @@
+### readme.md
+
+
+### project Topic
+
+user의 경작 환경과 작물을 바탕으로 농사에 도움이 되는 정보를 제공하는 project 입니다.
+
+### 백엔드
+- JDK 17 이상
+- MySQL
+- Spring Boot v3.3.7
+- Spring Data JPA
+- ORM
+
+### ENVIRONMENTS
+- windows 11 OSBuild 22631.4751
+- macOS Tahoe 26.3
+- Chrome 131.0.6778.96
+
+## 빠른 시작
+
+### 1. 저장소 클론
+
+```bash
+git clone https://github.com/pcCommerceMaster/pcCommerceMaster
+cd pcproject
+```
+
+### 2. 백엔드 설정 및 실행
+
+```bash
+cd backend
+
+# 데이터베이스 생성 (MySQL)
+# CREATE DATABASE "데이터베이스명";
+
+백엔드 서버는 `https://localhost:8080`에서 실행됩니다.
